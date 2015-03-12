@@ -1,0 +1,23 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca",
+        "org.apache.cordova.splashscreen",
+        "org.apache.cordova.inappbrowser",
+        "org.apache.cordova.file"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "6",
+    "cordova_version": "4.1",
+    "external_plugins": [
+
+    ],
+    "title-ja": "RSSreader",
+    "title-en": "",
+    "description-ja": "",
+    "description-en": "",
+    "category": "User Template",
+    "platform": [
+
+    ],
+    "name": "generated-1426144499-54ff963ffd17341427309630"
+}
