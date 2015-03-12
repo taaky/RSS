@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="js/feed-reader.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+     <script>
+        ons.bootstrap();
+    </script>
+   <script>
+    // CHANGE YOUR URL HERE!
+    // Url = ["http://www.atmarkit.co.jp/rss/rss091.xml","http://blog.livedoor.jp/itsoku/index.rdf"];
+    // localStorage.setItem("url",JSON.stringify(Url));
+    // 
+    Feed.feedUrl = JSON.parse(localStorage.getItem('url'));
+    google.load("feeds", "1");
+     $('#list').empty();
+     $('#feed-list').empty();
+
+
+   </script>
+
+</head>
+<body>
+    <ons-tabbar var="tabbar">
+        <ons-tabbar-item
+            icon="home"
+            label="Home"
+            page="page1.html"
+            active="true"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="bars"
+            label="List"
+            page="page2.html"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="ion-plus-circled"
+            label="Add"
+            page="page3.html"></ons-tabbar-item>
+    </ons-tabbar>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<ons-page>
+<ons-toolbar>
+    <div class="center">RSS Reader</div>
+</ons-toolbar>
+
+
+<div id="mask">
+    <div id="loading"><img src="loading.gif"></div>
+</div>
+    <ul id="feed-list"></ul>
+    <p id="error-message"></p>
+</ons-page>
+<script>
+$(function() {
+    if(Feed.feedUrl.length == 0){
+       $("#mask").remove();
+       $('#error-message').text('RSSFeedを登録して下さい。');
+    }else{
+        Feed.watchClick();
+        Feed.load();
+    }
+});
+</script>
+
